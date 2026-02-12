@@ -46,6 +46,7 @@ export default class Slider {
     }
 };
 
+ 
 
 // click on the element => slideindex = 1, showSlides(1)
-// item.parentNode.previousElementSibling => получаем родителя sidecontrol__controls -> обращаемся к prev elem
+// item.parentNode.previousElementSibling => получаем родителя sidecontrol__controls -> обращаемся к prev elem 
