@@ -1,10 +1,8 @@
-export default class Slider {
+import Slider from "./slider";
+
+export default class MainSlider extends Slider {
     constructor(page, btns) {
-        // свойства, описывающие слайдер еще до того, как он начал работать
-        this.page = document.querySelector(page);
-        this.slides = this.page.children;
-        this.btns = document.querySelectorAll(btns);
-        this.slideIndex = 1;
+        super(page, btns); // gets access to page, btns   
     }
 
     showSlides(n) {
@@ -62,9 +60,11 @@ export default class Slider {
 
         this.showSlides(this.slideIndex);
     }
-};
+}
 
- 
 
 // click on the element => slideindex = 1, showSlides(1)
 // item.parentNode.previousElementSibling => получаем родителя sidecontrol__controls -> обращаемся к prev elem 
+
+//{page = '', btns = '', next = '', prev = ''} = {} --> 
+// if first part of the object wasnt called -> {} -> mistake prevention
