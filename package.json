@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "NODE_OPTIONS=--openssl-legacy-provider gulp",
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider gulp"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider gulp",
+    "prod": "NODE_OPTIONS=--openssl-legacy-provider gulp build-prod-js"
   },
   "author": "",
   "license": "ISC",
