@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "NODE_OPTIONS=--openssl-legacy-provider gulp"
+    "gulp": "NODE_OPTIONS=--openssl-legacy-provider gulp",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider gulp"
   },
   "author": "",
   "license": "ISC",
